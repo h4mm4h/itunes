@@ -978,6 +978,22 @@ body {
   max-width: 1200px;
 }
 
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.card-content {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 .card-image .card-title {
   width: 100%;
   background: -webkit-gradient(linear, left bottom, left top, from(#000), to(transparent));
@@ -1000,11 +1016,11 @@ body {
   margin-left: -30px;
 }
 
-.ba-tune-play.pulse > :first-child {
+.ba-play-button.pulse .play-icon {
   display: none;
 }
 
-.ba-tune-play * {
+.ba-play-button * {
   pointer-events: none;
 }
 
